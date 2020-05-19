@@ -5,3 +5,11 @@
 - groupId: *edu.nwmissouri.bigdata3*
 - artifactId: *kafka-java-app*
 
+### Group Members
+**Eli Ross (Lead)**
+
+**Manideep Chamala**
+
+**Michael Baumli**
+
+**Venkat Prudhvi Dommaraju**
