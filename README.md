@@ -17,4 +17,5 @@ My Github profile [https://github.com/manideepchamala](https://github.com/manide
 **Michael Baumli**
 
 **Venkat Prudhvi Dommaraju** -
-My Profile [https://github.com/prudhvi15](https://github.com/prudhvi15)
+My [GithubProfile](https://github.com/prudhvi15)
+My [Linkedin profile](https://www.linkedin.com/in/venkat-prudhvi-dommaraju-188720186/)
