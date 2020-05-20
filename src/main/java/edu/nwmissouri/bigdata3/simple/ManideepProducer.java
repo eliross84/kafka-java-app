@@ -35,6 +35,9 @@ public class ManideepProducer {
 
     // My Custom logic to return first word of the input string from producer(based on space)
     // It allows input from keyboard
+   String message = customMessage();
+      ProducerRecord<String, String> rec_message = new ProducerRecord<String, String>(topicName, message);
+      producer.send(rec_message);
 
     String data = in.nextLine();
     while (!data.equals("exit")) {
@@ -48,6 +51,18 @@ public class ManideepProducer {
     in.close();
     producer.close();
   }
+
+  private static String customMessage() {
+    String[] sentences = { "i love cricket","dhoni is favorite", "Hadoop is fun", "Kafka is cool","producer will produce messages to topic","consumer  will consume messages from topic" };
+    String str="";
+  
+    for(String sentence : sentences){
+      String result=sentence.split(" ")[0];
+      str=str+ "The first word in "+sentence+" is: "+result+"\n";
+    }
+    return str;
+  }
 }
+
 
 
