@@ -15,7 +15,7 @@ My Linkedin profile [https://www.linkedin.com/in/chamala-manideep-7a7425177/](ht
 My Github profile [https://github.com/manideepchamala](https://github.com/manideepchamala)
 
 **Michael Baumli**
-My [Github (MichaelJBaumli)](https://github.com/MichaelJBaumli/) Profile.
+My [Github (MichaelJBaumli)](https://github.com/MichaelJBaumli/) Profile.  
 My [Linked In (Michael Baumli)](https://www.linkedin.com/in/michael-baumli-70a51b4/) Profile.
 
 **Venkat Prudhvi Dommaraju** -
