@@ -9,6 +9,7 @@
 **Eli Ross (Lead)**
 <br />My [Github (eliross84)](https://github.com/eliross84) Profile
 <br />My [LinkedIn](https://www.linkedin.com/in/eli-ross-4b409616b) Profile
+- I have created the Consumer for the program so that any input from the producer may be displayed. 
 
 **Manideep Chamala** 
 My Linkedin profile [https://www.linkedin.com/in/chamala-manideep-7a7425177/](https://www.linkedin.com/in/chamala-manideep-7a7425177/)
