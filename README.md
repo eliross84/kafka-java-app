@@ -7,8 +7,8 @@
 
 ## Group Members
 **Eli Ross (Lead)**
-My [Github (eliross84)](https://github.com/eliross84) Profile
-My [LinkedIn](https://www.linkedin.com/in/eli-ross-4b409616b) Profile
+<br />My [Github (eliross84)](https://github.com/eliross84) Profile
+<br />My [LinkedIn](https://www.linkedin.com/in/eli-ross-4b409616b) Profile
 
 **Manideep Chamala** 
 My Linkedin profile [https://www.linkedin.com/in/chamala-manideep-7a7425177/](https://www.linkedin.com/in/chamala-manideep-7a7425177/)
