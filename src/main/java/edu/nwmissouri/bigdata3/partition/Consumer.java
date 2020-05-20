@@ -1,4 +1,4 @@
-package edu.nwmissouri.bigdata3;
+package edu.nwmissouri.bigdata3.partition;
 
 import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.common.TopicPartition;
@@ -9,8 +9,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Properties;
 import java.util.Scanner;
-
-import javax.sound.sampled.SourceDataLine;
 
 public class Consumer {
     private static Scanner in;
@@ -70,9 +68,8 @@ public class Consumer {
         try {
             while(true){
                 ConsumerRecords<String, String> records = kafkaConsumer.poll(100);
-                for(ConsumerRecords<String, String> record: records){
+                for(ConsumerRecord<String, String> record: records)
                     System.out.println(record.value());
-                }
             }
             } catch (WakeupException ex){
                 System.out.println("Exception caught " + ex.getMessage());
