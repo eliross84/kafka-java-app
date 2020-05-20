@@ -21,6 +21,12 @@ My [Github (MichaelJBaumli)](https://github.com/MichaelJBaumli/) Profile.
 My [Linked In (Michael Baumli)](https://www.linkedin.com/in/michael-baumli-70a51b4/) Profile.
 
 **Venkat Prudhvi Dommaraju** -
-My [GithubProfile](https://github.com/prudhvi15)
-My [Linkedin profile](https://www.linkedin.com/in/venkat-prudhvi-dommaraju-188720186/)
+My GithubProfile - [https://github.com/prudhvi15](https://github.com/prudhvi15)
+My Linkedin profile - [https://www.linkedin.com/in/venkat-prudhvi-dommaraju-188720186/](https://www.linkedin.com/in/venkat-prudhvi-dommaraju-188720186/)
 - I have created a custom producer named PrudhviProducer.java in which I used a simple logic to return length of the string.
+1. To start zookeeper service I have used ```.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties```
+1. To start kafka service I have used ```.\bin\windows\kafka-server-start.bat .\config\server.properties```
+1. To compile and build jar file I have used ```mvn clean compile assembly:single```
+1. To start consumer I have used ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata3.simple.Consumer test group1```
+1. To start producer I have used ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata3.simple.PrudhviProducer test```
+
