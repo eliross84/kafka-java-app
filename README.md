@@ -23,4 +23,4 @@ My [Linked In (Michael Baumli)](https://www.linkedin.com/in/michael-baumli-70a51
 **Venkat Prudhvi Dommaraju** -
 My [GithubProfile](https://github.com/prudhvi15)
 My [Linkedin profile](https://www.linkedin.com/in/venkat-prudhvi-dommaraju-188720186/)
-- I have created a custom producer named PrudhviProducer.java in which I used a simple logic to return length of the string. Here string is the text entered by the user in producer. This returns the string length in the consumer.
+- I have created a custom producer named PrudhviProducer.java in which I used a simple logic to return length of the string.
