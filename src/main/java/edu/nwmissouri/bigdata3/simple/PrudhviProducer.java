@@ -33,19 +33,38 @@ public class PrudhviProducer {
 
     org.apache.kafka.clients.producer.Producer producer = new KafkaProducer(configProperties);
 
-    // My Custom logic to return lenght of string
+    // My Custom logic to return length of string
     // allows input from keyboard
+
+      String message = createMessage();
+      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
+      producer.send(rec);
+    
 
     String input = in.nextLine();
     while (!input.equals("exit")) {
-      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, "The length of the string:"+input.length());
-      producer.send(rec);
+      ProducerRecord<String, String> rec1 = new ProducerRecord<String, String>(topicName,input);
+      producer.send(rec1);
       input = in.nextLine();
+      in.close();
+      producer.close();
+  
+    
     }
-
-    in.close();
-    producer.close();
   }
+  private static String createMessage() {
+    String[] subjects = { "venkat prudhvi","Big Data", "Kafka", "Hadoop", "CustomProducer", "helloworld" };
+    String str="";
+  
+    for(String words : subjects){
+      String result=words.length()+"";
+      str=str+ "length of the "+words+" is: "+result+"\n";
+    }
+return str;
+  
+  }
+
+ 
 }
 
 
