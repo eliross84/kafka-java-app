@@ -9,6 +9,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class PrudhviProducer {
+  static int count=0;
   private static Scanner in;
 
   public static void main(String[] argv) throws Exception {
@@ -35,11 +36,11 @@ public class PrudhviProducer {
 
     // My Custom logic to return length of string
     // allows input from keyboard
-
+      for(int i=0;i<5;i++){
       String message = createMessage();
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
-    
+      }
 
     String input = in.nextLine();
     while (!input.equals("exit")) {
@@ -52,15 +53,13 @@ public class PrudhviProducer {
     
     }
   }
+  
   private static String createMessage() {
     String[] subjects = { "venkat prudhvi","Big Data", "Kafka", "Hadoop", "CustomProducer", "helloworld" };
-    String str="";
-  
-    for(String words : subjects){
-      String result=words.length()+"";
-      str=str+ "length of the "+words+" is: "+result+"\n";
-    }
-return str;
+      String result="the length of the "+subjects[count]+" is "+ subjects[count].length()+"";
+      count++;
+   
+return result;
   
   }
 
