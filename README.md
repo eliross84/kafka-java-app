@@ -16,6 +16,12 @@ My Linkedin profile [https://www.linkedin.com/in/chamala-manideep-7a7425177/](ht
 My Github profile [https://github.com/manideepchamala](https://github.com/manideepchamala)
 - I have created a custom producer with the name manideepProducer.java . Here i have written some code where a String is taken and the first word is returned by considering the spaces.
 
+- ```.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties``` - to run zookeeper service.
+- ```.\bin\windows\kafka-server-start.bat .\config\server.properties``` - to run kafka service.
+- ```mvn clean compile assembly:single``` - to compile and build jar file.
+- ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata3.simple.Consumer test group1``` - to run consumer.
+- ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata3.simple.ManideepProducer test``` - to run my custom producer.
+
 **Michael Baumli**  
 My [Github (MichaelJBaumli)](https://github.com/MichaelJBaumli/) Profile.  
 My [Linked In (Michael Baumli)](https://www.linkedin.com/in/michael-baumli-70a51b4/) Profile.
