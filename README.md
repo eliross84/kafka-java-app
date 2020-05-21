@@ -7,8 +7,8 @@
 
 ## Group Members
 **Eli Ross (Lead)**
-<br />My [Github (eliross84)](https://github.com/eliross84) Profile
-<br />My [LinkedIn](https://www.linkedin.com/in/eli-ross-4b409616b) Profile
+<br />My [https://github.com/eliross84/](https://github.com/eliross84/) Profile
+<br />My [https://www.linkedin.com/in/eli-ross-4b409616b/](https://www.linkedin.com/in/eli-ross-4b409616b/) Profile
 - I have created the Consumer for the program so that any input from the producer may be displayed. 
 
 **Manideep Chamala** 
@@ -23,8 +23,15 @@ My Github profile [https://github.com/manideepchamala](https://github.com/manide
 - ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata3.simple.ManideepProducer test``` - to run my custom producer.
 
 **Michael Baumli**  
-My [Github (MichaelJBaumli)](https://github.com/MichaelJBaumli/) Profile.  
-My [Linked In (Michael Baumli)](https://www.linkedin.com/in/michael-baumli-70a51b4/) Profile.
+My [https://github.com/MichaelJBaumli/](https://github.com/MichaelJBaumli/) Profile.  
+My [https://www.linkedin.com/in/michael-baumli-70a51b4/](https://www.linkedin.com/in/michael-baumli-70a51b4/) Profile.
+
+1. ```.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties``` - run zookeeper service.  
+1. ```.\bin\windows\kafka-server-start.bat .\config\server.properties``` - run kafka service.  
+1. ```mvn clean compile assembly:single``` - compile and build jar file.  
+1. ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata3.simple.Consumer test group1``` - run consumer.  
+1. ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata3.simple.BaumliProducer test``` - run my producer.  
+
 
 **Venkat Prudhvi Dommaraju** -
 My GithubProfile - [https://github.com/prudhvi15](https://github.com/prudhvi15)
