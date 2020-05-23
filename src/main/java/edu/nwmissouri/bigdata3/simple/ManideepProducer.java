@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class ManideepProducer {
   private static Scanner in;
-
+  static int i = 0;
   public static void main(String[] argv) throws Exception {
     if (argv.length != 1) {
       System.err.println("Please specify 1 parameter (the name of the topic)");
@@ -35,9 +35,12 @@ public class ManideepProducer {
 
     // My Custom logic to return first word of the input string from producer(based on space)
     // It allows input from keyboard
+
+    for(int i=0;i<5;i++){
    String message = customMessage();
       ProducerRecord<String, String> rec_message = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec_message);
+    }
 
     String data = in.nextLine();
     while (!data.equals("exit")) {
@@ -46,20 +49,17 @@ public class ManideepProducer {
       data = in.nextLine();
     }
 
-
-
     in.close();
     producer.close();
   }
 
   private static String customMessage() {
-    String[] sentences = { "i love cricket","dhoni is favorite", "Hadoop is fun", "Kafka is cool","producer will produce messages to topic","consumer  will consume messages from topic" };
+    String[] sentence = { "i love cricket","dhoni is favorite", "Hadoop is fun", "Kafka is cool","producer will produce messages to topic","consumer  will consume messages from topic" };
     String str="";
   
-    for(String sentence : sentences){
-      String result=sentence.split(" ")[0];
-      str=str+ "The first word in "+sentence+" is: "+result+"\n";
-    }
+    String result=sentence[i].split(" ")[0];
+    str=str+ "The first word in "+sentence[i]+" is: "+result+"\n";
+    i++;
     return str;
   }
 }
